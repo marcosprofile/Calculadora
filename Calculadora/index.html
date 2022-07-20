@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <input id="resultado" maxlength="10" type="text" class="visor" placeholder="0" disabled="disabled" >
+            <div class="botoes">
+                <div class="botoes-1">
+                    <button onclick="calcular('acao', 'c')" class="limpar">C</button>
+                    <button onclick="calcular('acao', '/')" class="dividir">/</button>
+                    <button onclick="calcular('valor', 7)" class="numero-7">7</button>
+                    <button onclick="calcular('valor', 8)" class="numero-8">8</button>
+                    <button onclick="calcular('valor', 9)" class="numero-9">9</button>
+                    <button onclick="calcular('valor', 4)" class="numero-4">4</button>
+                    <button onclick="calcular('valor', 5)" class="numero-5">5</button>
+                    <button onclick="calcular('valor', 6)" class="numero-6">6</button>
+                    <button onclick="calcular('valor', 1)" class="numero-1">1</button>
+                    <button onclick="calcular('valor', 2)" class="numero-2">2</button>
+                    <button onclick="calcular('valor', 3)" class="numero-3">3</button>
+                    <button onclick="calcular('valor', 0)" class="numero-0">0</button>
+                    <button onclick="calcular('acao', '.')" class="ponto">.</button>
+                </div>
+                <div class="botoes-2">
+                    <button onclick="calcular('acao', '*')" class="multiplicar">X</button>
+                    <button onclick="calcular('acao', '-')" class="subtrair">-</button>
+                    <button onclick="calcular('acao', '+')" class="somar">+</button>
+                    <button onclick="calcular('acao', '=')" class="resultado">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
